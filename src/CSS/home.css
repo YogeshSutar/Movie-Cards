@@ -1,0 +1,34 @@
+.home-container{
+    background: url('../images/homeBg.jpg');
+    background-size:cover ;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.home-inner-container{
+    position: relative;
+    top: 50%;
+    text-align: center;   
+}
+.home-inner-container h2 {
+    font-family:'Times New Roman', Times, serif;
+}
+
+.explore-button{
+    margin: 10px 0px;
+    padding: 8px;
+    border-radius: 5px;
+    background: none;
+    border: 1px solid rgb(82, 82, 82);
+    color: white;
+    font-weight: bolder;
+    transition: 0.3s;
+}
+.explore-button:hover{
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;    
+    background: radial-gradient(circle, rgb(253, 251, 251) 10% , rgb(43, 230, 255) 90%);
+}

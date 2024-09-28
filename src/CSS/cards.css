@@ -1,0 +1,65 @@
+/* html, body {
+    height: auto;
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+  } */
+
+.container{
+    background: radial-gradient(rgb(175, 231, 241),rgb(17, 17, 17));
+    display: flex;
+    flex-wrap:wrap;
+    /* justify-content: space-between; */
+    /* justify-items: auto; */
+    padding: 80px 30px;
+    /* border: 1px solid red; */
+    gap: 20px;
+
+}
+
+.inner-container{
+    flex: 1 1 calc(25% - 20px);
+    max-width:calc(25% - 20px);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(179, 179, 179, 0.562);
+    background-color: rgba(224, 224, 224, 0.137);
+    border-radius: 10px;
+    align-items: center;
+    padding: 10px 0px;
+    margin: 10px 0px;
+    
+}
+
+img{
+    max-width: 80%;
+    height: 100%;  
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.295);
+   transition: 0.4s; 
+} 
+   img:hover{
+       /* height: 100%;   */
+       width: 90%;
+       /* border: 1px red solid; */
+    /* max-width: 85%; */
+    /* paddn: 20px; */
+    /* max-width: 80%; */
+}
+
+.watch-btn{
+    /* border: 1px solid red; */
+    border: none;
+    border-radius: 3px;
+    color: black;
+    font-weight:bold ;
+    background-color: white;
+    padding: 5px 20px;
+    margin: 5px 0px;
+    /* transfore:; */
+}
+
+.watch-btn:hover{
+    color: red;
+}
