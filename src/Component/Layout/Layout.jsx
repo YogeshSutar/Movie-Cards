@@ -1,10 +1,15 @@
 import {useState, useEffect} from 'react'
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet, useNavigation  } from "react-router-dom";
 import '../../CSS/layout.css';
 import movieCardsImg from '../../images/moviesLogo.com.png'
+import Loading from '../../Pages/Loading';
 
 const Layout = () => {
+
   const [scrolling, setScrolling] = useState(false)
+
+  const navigation = useNavigation();
+
   
   const activeClass = ({ isActive }) => {
     return isActive ? "nav-title active" : "nav-title";
@@ -18,8 +23,9 @@ const Layout = () => {
       setScrolling(true);  // Change background to black when scrolled
     } else {
       setScrolling(false); // Transparent when not scrolled
-    }}
-  })
+    }
+  };
+  },[])
  const navbar={
     position: 'fixed',
     width: '100%',
@@ -30,6 +36,9 @@ const Layout = () => {
     transition:'0.4s',
     alignItems: 'center',
     zIndex: 1000
+}
+  if (navigation.state === "loading") {
+  return <Loading />;
 }
   return (
     <>
@@ -48,10 +57,13 @@ const Layout = () => {
               <NavLink to='/movieCards' className={activeClass}>MOVIES CARD</NavLink> 
             </li>
             <li>
-              <NavLink to='/contact' className={activeClass}>CONTACT</NavLink>
+              <NavLink to='/simpleCards' className={activeClass}>SIMPLE CARDS</NavLink>
             </li>
             <li>
-              <NavLink to='/about' className={activeClass}>ABOUT</NavLink> 
+              {/* <NavLink to='/contact' className={activeClass}>CONTACT US</NavLink>  */}
+            </li>
+            <li>
+              {/* <NavLink to='/about' className={activeClass}>ABOUT</NavLink>  */}
             </li>
           </ul>
         </nav>

@@ -1,7 +1,7 @@
 const ErrorPage =()=>{
     return(
         <>
-        <p><b>404</b>This is 404 Error Page</p>
+        <p style={{ textAlign:"center"}}><b>404</b> This is 404 Error Page</p>
         </>
     )
 }

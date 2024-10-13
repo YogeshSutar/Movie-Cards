@@ -1,0 +1,21 @@
+.main-container{
+    /* color: red; */
+    /* background: rgb(75,255,244); */
+background: linear-gradient(90deg, rgba(75,255,244,1) 0%, rgba(255,170,170,1) 50%, rgba(171,125,255,1) 100%);
+    /* background: red; */
+}
+
+.inner-box-content{
+    background: rgba(0,0,0,0.5);
+    border-radius: 20px;
+    color: white;
+    transition: 0.2s;
+}
+.inner-box-content:hover{
+
+}
+
+
+.inner-box-content span{
+    
+}

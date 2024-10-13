@@ -1,4 +1,3 @@
-
 export const moviesApi = async() =>{
     try{
     const response =  await fetch("https://www.omdbapi.com/?i=tt3896198&apikey=88f58236&s=titanic&page=1")
